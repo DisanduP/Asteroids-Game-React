@@ -1,0 +1,63 @@
+.asteroids-root
+  margin: 0
+  padding: 0
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0826 50%, #0a0a0a 100%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  font-family: 'Courier New', monospace
+  color: white
+  overflow: hidden
+  position: relative
+
+canvas
+  border: 2px solid #ff6b35
+  background: radial-gradient(circle at 30% 20%, #001122 0%, #000811 30%, #000000 100%)
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.3)
+  border-radius: 8px
+  display: block
+
+.game-hud
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 640px
+  margin-bottom: 10px
+  font-size: 14px
+
+.hud-section
+  background: rgba(255, 107, 53, 0.1)
+  border: 1px solid rgba(255, 107, 53, 0.3)
+  border-radius: 8px
+  padding: 10px
+
+.score
+  font-size: 20px
+  font-weight: bold
+  color: #ff6b35
+  text-shadow: 0 0 10px rgba(255, 107, 53, 0.5)
+
+.controls
+  margin-top: 10px
+  text-align: center
+  font-size: 12px
+  opacity: 0.8
+
+.game-over, .start-screen
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  z-index: 20
+  background: rgba(0, 0, 0, 0.8)
+  border: 2px solid #ff6b35
+  border-radius: 15px
+  padding: 30px
+
+.game-over h1, .start-screen h1
+  font-size: 28px
+  color: #ff6b35
+  margin: 0 0 15px 0
